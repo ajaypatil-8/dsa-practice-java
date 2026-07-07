@@ -3,14 +3,8 @@ class Node{
     Node next;
     Node(int val){
         this.val = val;
-    }   
-
-
+    }
 }
-
-
-
-
 
 public class LinkedListCreation {
 
@@ -20,9 +14,7 @@ public class LinkedListCreation {
             displayrecur(head.next);
             
         }
-    
-
-        
+            
     public static void main(String[] args) {
 
         
