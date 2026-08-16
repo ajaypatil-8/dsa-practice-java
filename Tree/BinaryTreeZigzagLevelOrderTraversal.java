@@ -72,4 +72,27 @@ public class BinaryTreeZigzagLevelOrderTraversal {
 
         return ans;
     }
+
+    public static void main(String[] args) {
+
+        BinaryTreeZigzagLevelOrderTraversal solution =
+                new BinaryTreeZigzagLevelOrderTraversal();
+
+        // Test 1: [3,9,20,null,null,15,7]
+        TreeNode test1 = new TreeNode(3);
+        test1.left = new TreeNode(9);
+        test1.right = new TreeNode(20);
+        test1.right.left = new TreeNode(15);
+        test1.right.right = new TreeNode(7);
+
+        // Test 2: [1]
+        TreeNode test2 = new TreeNode(1);
+
+        // Test 3: empty tree
+        TreeNode test3 = null;
+
+        System.out.println("Test 1: " + solution.zigzagLevelOrder(test1));
+        System.out.println("Test 2: " + solution.zigzagLevelOrder(test2));
+        System.out.println("Test 3: " + solution.zigzagLevelOrder(test3));
+    }
 }
